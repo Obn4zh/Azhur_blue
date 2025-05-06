@@ -17,155 +17,159 @@
     }
   </style>
 </head>
-<body class="bg-gradient-to-b from-gray-900 via-blue-900 to-black text-white font-sans antialiased">
+<body class="bg-gradient-to-b from-gray-950 via-rose-950 to-black text-white font-sans antialiased">
   <!-- Навигация -->
-  <header class="fixed top-0 w-full bg-gray-900 bg-opacity-80 backdrop-blur-md z-20 opacity-0 -translate-y-5 transition duration-700 observer-item">
+  <header class="fixed top-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-md z-20 opacity-0 -translate-y-5 transition duration-700 observer-item">
     <div class="container mx-auto flex items-center justify-between py-4 px-6">
-      <a href="#home" class="text-2xl font-extrabold tracking-wide text-blue-400 hover:text-blue-300 transition">Шоу-балет «Персона»</a>
+      <a href="#home" class="text-2xl font-extrabold tracking-wide text-rose-400 hover:text-rose-300 transition">Шоу-балет «Персона»</a>
       <nav class="hidden md:flex space-x-8">
-        <a href="#about" class="hover:text-blue-400 transition">О нас</a>
-        <a href="#gallery" class="hover:text-blue-400 transition">Галерея</a>
-        <a href="#contact" class="hover:text-blue-400 transition">Контакты</a>
+        <a href="#about" class="hover:text-rose-400 transition">О нас</a>
+        <a href="#gallery" class="hover:text-rose-400 transition">Галерея</a>
+        <a href="#contact" class="hover:text-rose-400 transition">Контакты</a>
       </nav>
-      <button class="md:hidden focus:outline-none text-blue-400" onclick="toggleMenu()">
+      <button class="md:hidden focus:outline-none text-rose-400" onclick="toggleMenu()">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
-    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-90">
-      <a href="#about" class="block px-6 py-3 hover:bg-gray-800 text-blue-300">О нас</a>
-      <a href="#gallery" class="block px-6 py-3 hover:bg-gray-800 text-blue-300">Галерея</a>
-      <a href="#contact" class="block px-6 py-3 hover:bg-gray-800 text-blue-300">Контакты</a>
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-900 bg-opacity-95">
+      <a href="#about" class="block px-6 py-3 hover:bg-rose-900 text-rose-300">О нас</a>
+      <a href="#gallery" class="block px-6 py-3 hover:bg-rose-900 text-rose-300">Галерея</a>
+      <a href="#contact" class="block px-6 py-3 hover:bg-rose-900 text-rose-300">Контакты</a>
     </div>
   </header>
+
   <!-- Баннер -->
-  <section id="home" class="py-24 flex items-center justify-center bg-fixed bg-center bg-cover px-4 observer-item opacity-0 -translate-y-5 transition duration-700" style="background-image:url('header-bg-dark.jpg');">
-    <div class="bg-black bg-opacity-70 p-10 rounded-3xl text-center shadow-lg max-w-2xl">
-      <h1 class="text-5xl font-extrabold mb-4 tracking-tight text-blue-300">Эмоции в движении</h1>
-      <p class="text-xl mb-6 text-blue-100">Изящество, грация и сила женского танца<br/>на Вашем мероприятии!</p>
-      <a href="#about" class="inline-block px-6 py-3 border border-blue-500 rounded-full text-sm font-semibold text-blue-300 hover:bg-blue-500 hover:text-gray-900 transition duration-500 mb-6">Узнать больше</a>
-      <img src="main-photo.jpeg" alt="Главное изображение шоу-балета" class="rounded-2xl shadow-2xl mx-auto max-w-full h-auto mt-4 border-2 border-blue-500">
+  <section id="home" class="py-24 flex items-center justify-center bg-fixed bg-center bg-cover px-4 observer-item opacity-0 -translate-y-5 transition duration-700" style="background-image:url('header-bg-dark-rose.jpg');">
+    <div class="bg-black bg-opacity-80 p-10 rounded-3xl text-center shadow-lg max-w-2xl">
+      <h1 class="text-5xl font-extrabold mb-4 tracking-tight text-rose-300">Эмоции в движении</h1>
+      <p class="text-xl mb-6 text-rose-200">Изящество, грация и сила женского танца<br/>на Вашем мероприятие!</p>
+      <a href="#about" class="inline-block px-6 py-3 border border-rose-600 rounded-full text-sm font-semibold text-rose-300 hover:bg-rose-600 hover:text-gray-900 transition duration-500 mb-6">Узнать больше</a>
+      <img src="main-photo.jpeg" alt="Главное изображение шоу-балета" class="rounded-2xl shadow-2xl mx-auto max-w-full h-auto mt-4 border-2 border-rose-700">
     </div>
   </section>
+
   <!-- О нас -->
-  <section id="about" class="relative py-24 px-6 md:px-0 observer-item opacity-0 -translate-y-5 transition duration-700 bg-gray-900">
+  <section id="about" class="relative py-24 px-6 md:px-0 observer-item opacity-0 -translate-y-5 transition duration-700 bg-gray-950">
     <div class="container mx-auto text-center max-w-2xl">
-      <h2 class="text-4xl font-bold mb-6 text-blue-400">О нас</h2>
+      <h2 class="text-4xl font-bold mb-6 text-rose-400">О нас</h2>
       <p class="text-lg leading-relaxed text-gray-300 mb-6">
         Шоу-балет «Персона» — исключительно женская труппа, где каждая выступает в роли воплощения эмоций.<br/>
         Наши постановки сочетают в себе классическую технику и современный стиль.<br/>
         Изящные движения под свет софитов создают волшебную атмосферу на любом мероприятии.
       </p>
-      <div class="bg-gradient-to-br from-blue-900 to-gray-800 p-8 rounded-xl shadow-xl mt-8 border border-blue-800">
-        <h3 class="text-2xl font-semibold text-blue-300 mb-4">Свяжитесь с нами, и мы создадим танцевальные шоу для:</h3>
-        <ul class="text-lg text-blue-200 list-disc list-inside">
+      <div class="bg-gradient-to-br from-rose-950 to-gray-900 p-8 rounded-xl shadow-xl mt-8 border border-rose-800">
+        <h3 class="text-2xl font-semibold text-rose-300 mb-4">Свяжитесь с нами, и мы создадим танцевальные шоу для:</h3>
+        <ul class="text-lg text-rose-200 list-disc list-inside">
           <li>Свадьбы</li>
           <li>Корпоративы</li>
           <li>Банкетные мероприятия</li>
           <li>Юбилеи</li>
           <li>Вечеринки</li>
         </ul>
-        <p class="mt-4 text-blue-200">Наши постановки станут ярким акцентом вашего события в темноте зала!</p>
+        <p class="mt-4 text-rose-200">Наши постановки станут ярким акцентом вашего события в темноте зала!</p>
       </div>
     </div>
     <svg class="absolute bottom-0 left-0 w-full -z-10" viewBox="0 0 1440 320"><path fill="#0f172a" fill-opacity="1" d="M0,256L1440,96L1440,320L0,320Z"></path></svg>
   </section>
+
   <!-- Галерея -->
-  <section id="gallery" class="py-24 px-6 md:px-0 observer-item opacity-0 -translate-y-5 transition duration-700 bg-gray-900">
+  <section id="gallery" class="py-24 px-6 md:px-0 observer-item opacity-0 -translate-y-5 transition duration-700 bg-gray-950">
     <div class="container mx-auto">
-      <h2 class="text-4xl font-bold text-center mb-12 text-blue-400">Галерея</h2>
+      <h2 class="text-4xl font-bold text-center mb-12 text-rose-400">Галерея</h2>
       <div class="swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-blue-500">
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
             <a href="img1.jpeg" data-fancybox="gallery"><img src="img1.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img2.jpeg" data-fancybox="gallery"><img src="img2.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img2.jpeg" data-fancybox="gallery"><img src="img2.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img3.jpeg" data-fancybox="gallery"><img src="img3.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img3.jpeg" data-fancybox="gallery"><img src="img3.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img4.jpeg" data-fancybox="gallery"><img src="img4.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img4.jpeg" data-fancybox="gallery"><img src="img4.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img5.jpeg" data-fancybox="gallery"><img src="img5.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img5.jpeg" data-fancybox="gallery"><img src="img5.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img6.jpeg" data-fancybox="gallery"><img src="img6.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img6.jpeg" data-fancybox="gallery"><img src="img6.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img7.jpeg" data-fancybox="gallery"><img src="img7.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img7.jpeg" data-fancybox="gallery"><img src="img7.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img8.jpeg" data-fancybox="gallery"><img src="img8.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img8.jpeg" data-fancybox="gallery"><img src="img8.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img9.jpeg" data-fancybox="gallery"><img src="img9.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img9.jpeg" data-fancybox="gallery"><img src="img9.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img10.jpeg" data-fancybox="gallery"><img src="img10.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img10.jpeg" data-fancybox="gallery"><img src="img10.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img11.jpeg" data-fancybox="gallery"><img src="img11.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img11.jpeg" data-fancybox="gallery"><img src="img11.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img12.jpeg" data-fancybox="gallery"><img src="img12.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img12.jpeg" data-fancybox="gallery"><img src="img12.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img13.jpeg" data-fancybox="gallery"><img src="img13.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img13.jpeg" data-fancybox="gallery"><img src="img13.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img14.jpeg" data-fancybox="gallery"><img src="img14.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700"">
+            <a href="img14.jpeg" data-fancybox="gallery"><img src="img14.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img15.jpeg" data-fancybox="gallery"><img src="img15.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img15.jpeg" data-fancybox="gallery"><img src="img15.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img16.jpeg" data-fancybox="gallery"><img src="img16.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img16.jpeg" data-fancybox="gallery"><img src="img16.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img17.jpeg" data-fancybox="gallery"><img src="img17.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img17.jpeg" data-fancybox="gallery"><img src="img17.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img18.jpeg" data-fancybox="gallery"><img src="img18.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img18.jpeg" data-fancybox="gallery"><img src="img18.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img19.jpeg" data-fancybox="gallery"><img src="img19.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img19.jpeg" data-fancybox="gallery"><img src="img19.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img20.jpeg" data-fancybox="gallery"><img src="img20.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img20.jpeg" data-fancybox="gallery"><img src="img20.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img21.jpeg" data-fancybox="gallery"><img src="img21.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img21.jpeg" data-fancybox="gallery"><img src="img21.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img22.jpeg" data-fancybox="gallery"><img src="img22.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img22.jpeg" data-fancybox="gallery"><img src="img22.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img23.jpeg" data-fancybox="gallery"><img src="img23.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img23.jpeg" data-fancybox="gallery"><img src="img23.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
-          <div class="swiper-slide rounded-xl overflow-hidden shadow-md">
-            <a href="img24.jpeg" data-fancybox="gallery"><img src="img24.jpeg" alt="" class="w-full h-full object-cover"/></a>
+          <div class="swiper-slide rounded-xl overflow-hidden shadow-2xl border-2 border-rose-700">
+            <a href="img24.jpeg" data-fancybox="gallery"><img src="img24.jpeg" alt="" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"/></a>
           </div>
           <!-- ... повторите для остальных изображений ... -->
         </div>
-        <div class="swiper-button-prev text-blue-400"></div>
-        <div class="swiper-button-next text-blue-400"></div>
+        <div class="swiper-button-prev text-rose-400"></div>
+        <div class="swiper-button-next text-rose-400"></div>
         <div class="swiper-pagination mt-4"></div>
       </div>
     </div>
   </section>
+
   <!-- Контакты -->
-  <section id="contact" class="bg-blue-900 py-24 px-6 md:px-0 observer-item opacity-0 -translate-y-5 transition duration-700">
+  <section id="contact" class="bg-rose-950 bg-opacity-90 py-24 px-6 md:px-0 observer-item opacity-0 -translate-y-5 transition duration-700">
     <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-8 text-blue-200">Контакты</h2>
-      <p class="text-lg mb-4 text-blue-100">
-        <a href="tel:+79185739332" class="hover:text-blue-300">+7 (918) 573-93-32</a>
+      <h2 class="text-4xl font-bold mb-8 text-rose-200">Контакты</h2>
+      <p class="text-lg mb-4 text-rose-100">
+        <a href="tel:+79185739332" class="hover:text-rose-300">+7 (918) 573-93-32</a>
       </p>
       <p class="text-lg">
-        <a href="https://wa.me/79185739332" target="_blank" class="inline-flex items-center text-blue-100 hover:text-green-400 transition">
+        <a href="https://wa.me/79185739332" target="_blank" class="inline-flex items-center text-rose-100 hover:text-green-400 transition">
           Написать в WhatsApp
           <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-6 w-6 text-green-500" fill="currentColor" viewBox="0 0 24 24">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.149-.672.15-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.297-.495.099-.198.05-.371-.025-.52-.075-.149-.672-1.612-.922-2.207-.242-.579-.487-.5-.672-.51l-.572-.01c-.198 0-.52.074-.792.371s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.26.489 1.69.626.71.227 1.355.195 1.865.118.569-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.271-.198-.568-.347z"/>
@@ -175,10 +179,12 @@
       </p>
     </div>
   </section>
+
   <!-- Footer -->
   <footer class="bg-gray-950 py-6 text-center text-sm text-gray-500 observer-item opacity-0 -translate-y-5 transition duration-700">
     © 2025 Шоу-балет «Персона»
   </footer>
+
   <!-- Скрипты -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
@@ -197,36 +203,36 @@
             }
           });
         }, { threshold: 0.2 }).observe(el);
-      });
-      
-      new Swiper('.swiper', {
-        loop: true,
-        spaceBetween: 20,
-        slidesPerView: 1,
-        breakpoints: {
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 }
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        }
-      });
-      
-      Fancybox.bind('[data-fancybox="gallery"]', {
-        infinite: true,
-        Image: { zoom: true, click: false },
-        Toolbar: { display: ['close', 'thumbs'] },
-        Thumbs: { Carousel: { preload: 2 } }
-      });
-      
-      document.querySelectorAll('.mobile-menu-link').forEach(link => {
-        link.addEventListener('click', () => {
-          document.getElementById('mobile-menu').classList.add('hidden');
+        
+        new Swiper('.swiper', {
+          loop: true,
+          spaceBetween: 20,
+          slidesPerView: 1,
+          breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          }
+        });
+        
+        Fancybox.bind('[data-fancybox="gallery"]', {
+          infinite: true,
+          Image: { zoom: true, click: false },
+          Toolbar: { display: ['close', 'thumbs'] },
+          Thumbs: { Carousel: { preload: 2 } }
+        });
+        
+        document.querySelectorAll('.mobile-menu-link').forEach(link => {
+          link.addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.add('hidden');
+          });
         });
       });
     });
